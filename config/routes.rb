@@ -18,19 +18,25 @@ Rails.application.routes.draw do
 
   get("/zodiacs/aries", { :controller =>  "fires", :action =>  "ram" })
   get("/zodiacs/leo", { :controller => "fires", :action => "lion" })
-  # get("/zodiacs/sagittarius" { :controller => "fire", :action => "archer" })
+  get("/zodiacs/sagittarius", { :controller => "fires", :action => "archer" })
   
-  # get("/zodiacs/taurus", { :controller, "earth", :action, "bull" })
-  # get("/zodiacs/virgo", { :controller => "earth", :action => "maiden" })
-  # get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
+  get("/zodiacs/taurus", { :controller => "earth", :action => "bull" })
+
+  get("/zodiacs/virgo", { :controller => "earth", :action => "maiden" })
+
+  get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
   
-  # get("/zodiacs/gemini", { :controller => "air", :action => "twins" })
-  # get(" /zodiacs/libra", { :controller => "air", :action => "scales" })
-  # get ("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
+  get("/zodiacs/gemini", { :controller => "air", :action => "twins" })
+
+  get("/zodiacs/libra", { :controller => "air", :action => "scales" })
+
+  get("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
   
-  # get("/zodiacs/cancer " { :controller => "earth" :action => "crab" })
-  # get("/zodiac/ scorpio", { :controller => "Water", :action => "scorpion" })
-  # get("/zodiacs/pisces", { :controller => "water", :action => "fish " })
+  get("/zodiacs/cancer", { :controller => "waterrrr", :action => "crab" })
+
+  get("/zodiacs/scorpio", { :controller => "waterrrr", :action => "scorpion" })
+
+  get("/zodiacs/pisces", { :controller => "waterrrr", :action => "fish" })
 
   # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
@@ -46,12 +52,12 @@ Rails.application.routes.draw do
   #  - Add some static HTML to mock up the response that you want to send back.
   #  - Write the Ruby to make it dynamic, and work properly.
 
-  # /roll/1/6
-  # /roll/2/6
-  # /roll/3/6
-  # /roll/4/6
-  # /roll/5/6
-  # /roll/6/6
+  get("/roll/1/6", { :controller => "six", :action => "one_side"})
+  # get("/roll/2/6", { :controller => "six", :action => "two"})
+  # get("/roll/3/6", { :controller => "six", :action => "three"})
+  # get("/roll/4/6", { :controller => "six", :action => "four"})
+  # get("/roll/5/6", { :controller => "six", :action => "five"})
+  # get("/roll/6/6", { :controller => "six", :action => "six"})
 
   # /roll/1/4
   # /roll/2/4
